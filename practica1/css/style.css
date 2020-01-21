@@ -30,8 +30,8 @@ header {
 #divisionArticulos {
   background: sandybrown;
   width: 75%;
-  height: 75vh;
-  margin: 0px 5px;
+  height: 90vh;
+  margin: 5px 5px;
   float: left;
 }
 
@@ -53,21 +53,31 @@ h3 {
 }
 
 aside {
-  background: #df9393;
+  background: beige;
   width: 24%;
-  padding: 10px 0px;
   color: darkred;
   margin-top: 5px;
   float: left;
+  height: 90vh;
 }
 
 img {
   width: 20vw;
+  height: 25vh;
+  text-align: center;
 }
 
 .publicidad {
   text-align: center;
   margin-top: 10px;
+}
+
+footer {
+  background: navajowhite;
+  clear: both;
+  color: black;
+  height: 8vh;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
