@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  height: 80vh;
+  background: sandybrown;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.flex-container > div {
+  background: peachpuff;
+  width: 17%;
+  height: 17vh;
+  margin: 10px 5px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
