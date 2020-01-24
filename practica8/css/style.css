@@ -1,0 +1,234 @@
+body {
+  background: yellow;
+}
+
+.pelota {
+  position: relative;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 16s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 8s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 16s;
+  animation-delay: 8s;
+  animation-iteration-count: 90;
+}
+
+@-webkit-keyframes example {
+  0% {
+    background-color: none;
+    left: 0px;
+    top: 0px;
+  }
+  5% {
+    background-color: none;
+    left: 1600px;
+    top: 0px;
+  }
+  10% {
+    background-color: none;
+    left: 1600px;
+    top: 800px;
+  }
+  15% {
+    background-color: none;
+    left: 800px;
+    top: 0px;
+  }
+  20% {
+    background-color: none;
+    left: 800px;
+    top: 800px;
+  }
+  25% {
+    background-color: none;
+    left: 600px;
+    top: 0px;
+  }
+  30% {
+    background-color: none;
+    left: 630px;
+    top: 0px;
+  }
+  35% {
+    background-color: none;
+    left: 630px;
+    top: 800px;
+  }
+  40% {
+    background-color: none;
+    left: 500px;
+    top: 0px;
+  }
+  45% {
+    background-color: none;
+    left: 0px;
+    top: 800px;
+  }
+  50% {
+    background-color: none;
+    left: 800px;
+    top: 730px;
+  }
+  55% {
+    background-color: none;
+    left: 0px;
+    top: 400px;
+  }
+  60% {
+    background-color: none;
+    left: 400px;
+    top: 0px;
+  }
+  65% {
+    background-color: none;
+    left: 800px;
+    top: 800px;
+  }
+  70% {
+    background-color: none;
+    left: 230px;
+    top: 0px;
+  }
+  75% {
+    background-color: none;
+    left: 340px;
+    top: 800px;
+  }
+  80% {
+    background-color: none;
+    left: 550px;
+    top: 0px;
+  }
+  85% {
+    background-color: none;
+    left: 800px;
+    top: 430px;
+  }
+  90% {
+    background-color: none;
+    left: 640px;
+    top: 800px;
+  }
+  95% {
+    background-color: none;
+    left: 110px;
+    top: 0px;
+  }
+  100% {
+    background-color: none;
+    left: 530px;
+    top: 800px;
+  }
+}
+@keyframes example {
+  0% {
+    background-color: none;
+    left: 0px;
+    top: 0px;
+  }
+  5% {
+    background-color: none;
+    left: 1600px;
+    top: 0px;
+  }
+  10% {
+    background-color: none;
+    left: 1600px;
+    top: 800px;
+  }
+  15% {
+    background-color: none;
+    left: 800px;
+    top: 0px;
+  }
+  20% {
+    background-color: none;
+    left: 800px;
+    top: 800px;
+  }
+  25% {
+    background-color: none;
+    left: 600px;
+    top: 0px;
+  }
+  30% {
+    background-color: none;
+    left: 630px;
+    top: 0px;
+  }
+  35% {
+    background-color: none;
+    left: 630px;
+    top: 800px;
+  }
+  40% {
+    background-color: none;
+    left: 500px;
+    top: 0px;
+  }
+  45% {
+    background-color: none;
+    left: 0px;
+    top: 800px;
+  }
+  50% {
+    background-color: none;
+    left: 800px;
+    top: 730px;
+  }
+  55% {
+    background-color: none;
+    left: 0px;
+    top: 400px;
+  }
+  60% {
+    background-color: none;
+    left: 400px;
+    top: 0px;
+  }
+  65% {
+    background-color: none;
+    left: 800px;
+    top: 800px;
+  }
+  70% {
+    background-color: none;
+    left: 230px;
+    top: 0px;
+  }
+  75% {
+    background-color: none;
+    left: 340px;
+    top: 800px;
+  }
+  80% {
+    background-color: none;
+    left: 550px;
+    top: 0px;
+  }
+  85% {
+    background-color: none;
+    left: 800px;
+    top: 430px;
+  }
+  90% {
+    background-color: none;
+    left: 640px;
+    top: 800px;
+  }
+  95% {
+    background-color: none;
+    left: 110px;
+    top: 0px;
+  }
+  100% {
+    background-color: none;
+    left: 530px;
+    top: 800px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
