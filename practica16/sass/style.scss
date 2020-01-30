@@ -1,0 +1,73 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+
+//align-item centra los elementos horizontalmente (eje x)
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background: #F9E79F; //#EB984E #F9E79F
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; //centra los elementos verticalmente (eje y)
+    
+}
+
+.contenedor > .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor > .row > div{
+    width: 20vw;
+    height: 20vh; 
+    border: 2px solid #EB984E;  //#E67E22
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 2px solid #EB984E;
+    opacity: 1;
+}
+
+.contenedor > .row > div > span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    visibility: hidden;
+}
+
+span::after{
+
+}
+
+img::after{
+    content: attr('data-text');
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.contenedor > .row > div:hover > img{
+    transition: 0.7s;
+    opacity: 0.3;
+}
+
+.contenedor > .row > div:hover > span{
+    visibility: visible;
+}
