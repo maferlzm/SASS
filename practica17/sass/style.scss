@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #240229;
+}
+
+.loader{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#FF1A03, #FFA703, #FBFF03 , #66FF03 , #0390FF , #A303FF , #FF03B6  );
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+}
+
+.loader::after{
+    position: absolute;
+    content: '';
+    top: 100px;
+    left: 100px;
+    bottom: 100px;
+    right: 100px;
+    background: #240229;
+    border-radius: 50%;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loader > span{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#FF1A03, #FFA703, #FBFF03 , #66FF03 , #0390FF , #A303FF , #FF03B6  );
+    border-radius: 50%;
+}
+
+.loader span:nth-child(1){
+    filter: blur(7px);
+}
+.loader span:nth-child(2){
+    filter: blur(14px);
+}
+.loader span:nth-child(3){
+    filter: blur(21px);
+}
+.loader span:nth-child(4){
+    filter: blur(28px);
+}
