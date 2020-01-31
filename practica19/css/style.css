@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*
+
+$ -> Indicia a SASS que se declarará una variable
+$< nombre de la variable >: <valor que se le asignará a la variable>
+
+    1.- No deben de inciar con un número
+    2.- Son case sensitive
+    3.- El nombre de la variable puede ser alfanumérica. Puede ser exclusiva de letras pero no de números
+    4.- No se debe repetir el nombre de la variable. Cada variable debe tener nombre único
+    5.- Espaciado en una variable se representa con un '_'. Ejemplo: color_1
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #18191f;
+  flex-direction: column;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  margin: 10px 0;
+}
+ul > li {
+  list-style: none;
+}
+ul > li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #18191f;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.5), 3px 3px 3px black;
+}
+ul > li a .fa {
+  font-size: 22px;
+  color: #555;
+}
+ul:nth-child(1) li a:hover .fa {
+  color: #D2B4DE;
+  text-shadow: 0 0 15px #D2B4DE;
+}
+ul:nth-child(2) li a:hover .fa {
+  color: #F5B7B1;
+  text-shadow: 0 0 15px #F5B7B1;
+}
+ul:nth-child(3) li a:hover .fa {
+  color: #FBAA25;
+  text-shadow: 0 0 15px #FBAA25;
+}
+
+/*# sourceMappingURL=style.css.map */
