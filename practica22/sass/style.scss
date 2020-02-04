@@ -1,0 +1,118 @@
+$width: 100%;
+$socialColor: #3b5999, #55acee, #dd4b39,
+ #0077B5, #34465d, #00AFF0, #e4405f, #cd201f,
+#bd081c;
+$list: 1, 2, 3, 4, 5, 6, 7, 8, 9;
+
+//breakPoints
+$breakPointLap: 1096px;
+$breakPointIpad: 768px;
+$breakPointIphone: 375px;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #F1EEE8 ;
+}
+
+.container{
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+    & h1{
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+
+    & ul{
+        margin: 0;
+        padding: 0;
+
+        & li{
+            list-style: none;
+            float: left;
+            width: $width / 9;
+            box-sizing: border-box;
+            transition: 0.5s ;
+
+            &:hover{
+                transform: rotateY(360deg);
+            }
+
+
+            & a {
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+                color: white;
+
+                /*
+                PARA QUE GIRE EL ICONO 
+                transition: 0.5s ;
+
+                &:hover{
+                    transform: rotateY(360deg);
+                }*/
+
+                & .fa{
+                    font-size: 40px;
+                    
+                }
+            }
+
+            @each $index in $list {
+                &:nth-child(#{$index}){
+                    background: nth($socialColor, $index);
+                }
+            }
+
+
+        }
+    }
+}
+
+//1096px
+@media (max-width: $breakPointLap){
+    .container{
+        width: $width;
+
+        & h1{
+            font-size: 30px;
+        }
+
+        & ul li{
+            width: $width/3;
+        }
+    }
+}
+
+@media (max-width: $breakPointIpad){
+    .container{
+        width: $width;
+
+        & h1{
+            font-size: 20px;
+        }
+
+        & ul li{
+            width: $width/2;
+        }
+    }
+}
+@media (max-width: $breakPointIphone){
+    .container{
+        width: $width;
+
+        & h1{
+            font-size: 10px;
+        }
+
+        & ul li{
+            width: $width/1;
+        }
+    }
+}

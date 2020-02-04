@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #F1EEE8;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.container ul {
+  margin: 0;
+  padding: 0;
+}
+.container ul li {
+  list-style: none;
+  float: left;
+  width: 11.1111111111%;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.container ul li:hover {
+  transform: rotateY(360deg);
+}
+.container ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  /*
+  PARA QUE GIRE EL ICONO 
+  transition: 0.5s ;
+
+  &:hover{
+      transform: rotateY(360deg);
+  }*/
+}
+.container ul li a .fa {
+  font-size: 40px;
+}
+.container ul li:nth-child(1) {
+  background: #3b5999;
+}
+.container ul li:nth-child(2) {
+  background: #55acee;
+}
+.container ul li:nth-child(3) {
+  background: #dd4b39;
+}
+.container ul li:nth-child(4) {
+  background: #0077B5;
+}
+.container ul li:nth-child(5) {
+  background: #34465d;
+}
+.container ul li:nth-child(6) {
+  background: #00AFF0;
+}
+.container ul li:nth-child(7) {
+  background: #e4405f;
+}
+.container ul li:nth-child(8) {
+  background: #cd201f;
+}
+.container ul li:nth-child(9) {
+  background: #bd081c;
+}
+
+@media (max-width: 1096px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container ul li {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
+  .container ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 10px;
+  }
+  .container ul li {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
